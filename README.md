@@ -18,7 +18,7 @@ Get Started
 ======
 ```
 git clone https://github.com/yeonki-choi/chef11_util.git
-cd chef_11_util
+cd chef11_util
 cp centos6-omnibus.erb /opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.2.0/lib/chef/knife/bootstrap/
 
 # Before Run the below command, chef version number must be specified in knife.rb 

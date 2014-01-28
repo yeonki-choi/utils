@@ -1,9 +1,9 @@
 centos6-omnibus.erb
-=====
+====
 By Yeonki Choi  <a href="http://hyper-choi.blogspot.com">http://hyper-choi.blogspot.com</a>
 
 About 
-=====
+====
 A distro file for installing chef-client on CentOS 6 with 'knife bootstrap' command instead of running install.sh
 - Invoking http://www.opscode.com/chef/install.sh inside of this script.
 - Getting the version number of chef client in knife.rb 
@@ -11,11 +11,11 @@ A distro file for installing chef-client on CentOS 6 with 'knife bootstrap' comm
 
 
 Requirement
-=====
+====
 Chef 11 
 
 Get Started
-=====
+====
 ```
 git clone https://github.com/yeonki-choi/chef11_util.git
 cd chef11_util
@@ -28,6 +28,5 @@ knife[:client_version] = "11.2.0-1"
 
 # Run knife bootstrap to install 
 knife bootstrap node_name --distro centos6-omnibus 
-
 
 ```

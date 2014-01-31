@@ -3,8 +3,18 @@ bash -c '
 
 if [ ! -f /usr/bin/chef-client ]; then
 
+	LINUX_TYPE=$(cat /etc/issue)
+	OS_INFO=($LINUX_TYPE)
+	case "${OS_INFO[0],,}" in
+	"ubuntu")
+		apt-get install -y curl
+		;;
+	"centos" | "red")
+		yum install -y curl
+		;;
+	esac
+
 	# Download & Install curl, chef
-	yum install -y curl
 	curl -skS -L http://www.opscode.com/chef/install.sh | bash -s - -v <%=knife_config[:client_version]%>
 	mkdir -p /etc/chef
 

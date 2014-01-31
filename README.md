@@ -1,4 +1,4 @@
-centos6-omnibus.erb
+omnibus.erb
 ====
 By Yeonki Choi  <a href="http://hyper-choi.blogspot.com">http://hyper-choi.blogspot.com</a>
 

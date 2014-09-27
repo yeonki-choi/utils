@@ -36,7 +36,7 @@ knife bootstrap node_name --distro omnibus
 
 About .vimrc
 ====
-This .vimrc is the environment file and is used to development cookbooks via vim.
+This .vimrc is the environment file and is used to development cookbooks via vim.<br>
 Plug-in list:
 - t9md/vim-chef: Formatting Chef cookbook.
 - The-NERD-tree: Provides tree window on vim

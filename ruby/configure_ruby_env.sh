@@ -13,8 +13,6 @@ ruby_version=${ruby_version:-"$default_version"}
 
 echo "You chose $ruby_version "
 
-exit 0
-
 
 # Install git
 yum install -y git
@@ -30,7 +28,7 @@ yum install gcc openssl-devel
 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-source .bash_profile
+source ~/.bash_profile
 
 
 # Ruby install by using rbenv (rbenv install --list )
@@ -42,4 +40,4 @@ rbenv global $ruby_version
 
 
 # Print version of installed ruby
-echo "Installed Ruby - "$( rbenv version )
+echo "Ruby was successfually installed - "$( rbenv version )
